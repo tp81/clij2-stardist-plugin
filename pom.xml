@@ -12,18 +12,18 @@
 		<relativePath />
 	</parent>
 
-	<groupId>com.yourdomain</groupId>
+	<groupId>net.tpengo</groupId>
 	<!-- note: the artifactId must contain an underscore _ to make ImageJ handle it correctly.-->
-	<artifactId>yourplugin_</artifactId>
+	<artifactId>clijStardistPlugin_</artifactId>
 	<version>0.1.0</version>
 
-	<name>YourPlugin</name>
-	<description>YourPlugin</description>
+	<name>CLIJ2StarDistPlugin</name>
+	<description>A CLIJ2 plugin to run StarDist</description>
 	<url>http://yourdomain.com</url>
-	<inceptionYear>2020</inceptionYear>
+	<inceptionYear>2021</inceptionYear>
 	<organization>
-		<name>Your organisation</name>
-		<url>http://yourdomain.com</url>
+		<name>U of Minnesota</name>
+		<url>https://umn.edu</url>
 	</organization>
 	<licenses>
 		<license>
@@ -34,10 +34,10 @@
 
 	<developers>
 		<developer>
-			<id>yourid</id>
-			<name>You</name>
-			<url>https://yourdomain.com</url>
-			<organization>Your organisation</organization>
+			<id>tp81</id>
+			<name>Thomas Pengo</name>
+			<url>https://github.com/tp81</url>
+			<organization>U of Minnesota</organization>
 			<roles>
 				<role>developer</role>
 			</roles>
@@ -71,10 +71,10 @@
 	</ciManagement>
 
 	<properties>
-		<package-name>com.yourcompany</package-name>
+		<package-name>net.tpengo</package-name>
 		<license.licenseName>bsd_3</license.licenseName>
-		<license.copyrightOwners>You</license.copyrightOwners>
-		<scijava.app.directory>C:/programs/fiji-win64/Fiji.app/</scijava.app.directory>
+		<license.copyrightOwners>Thomas Pengo</license.copyrightOwners>
+		<scijava.app.directory>D:/Fiji.app-20200323</scijava.app.directory>
 		<!--<imagej.app.directory>/home/rhaase/programs/fiji/Fiji.app/</imagej.app.directory>-->
 	</properties>
 
@@ -87,12 +87,26 @@
 			<groupId>net.haesleinhuepf</groupId>
 			<artifactId>clij2_</artifactId>
 		</dependency>
-	</dependencies>
+		<dependency>
+			<groupId>de.csbdresden</groupId>
+			<artifactId>StarDist_</artifactId>
+			<version>0.3.0</version>
+		</dependency>
+		<dependency>
+			<groupId>de.csbdresden</groupId>
+			<artifactId>csbdeep</artifactId>
+			<version>0.3.4</version>
+		</dependency>
+</dependencies>
 
 	<repositories>
 		<repository>
-			<id>hslh</id>
-			<url>http://dl.bintray.com/haesleinhuepf/clij</url>
+			<id>scijava.public</id>
+			<url>https://maven.scijava.org/content/groups/public</url>
+		</repository>
+		<repository>
+			<id>imagej.public</id>
+			<url>https://maven.imagej.net/content/groups/public</url>
 		</repository>
 	</repositories>
 
