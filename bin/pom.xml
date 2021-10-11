@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0
+		http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<parent>
+		<groupId>net.haesleinhuepf</groupId>
+		<artifactId>clij-parent-pom</artifactId>
+		<version>2.5.0.1</version>
+		<relativePath />
+	</parent>
+
+	<groupId>net.tpengo</groupId>
+	<!-- note: the artifactId must contain an underscore _ to make ImageJ handle it correctly.-->
+	<artifactId>clijStardistPlugin_</artifactId>
+	<version>0.1.0</version>
+
+	<name>CLIJ2StarDistPlugin</name>
+	<description>A CLIJ2 plugin to run StarDist</description>
+	<url>http://yourdomain.com</url>
+	<inceptionYear>2021</inceptionYear>
+	<organization>
+		<name>U of Minnesota</name>
+		<url>https://umn.edu</url>
+	</organization>
+	<licenses>
+		<license>
+			<name>Public domain</name>
+			<distribution>repo</distribution>
+		</license>
+	</licenses>
+
+	<developers>
+		<developer>
+			<id>tp81</id>
+			<name>Thomas Pengo</name>
+			<url>https://github.com/tp81</url>
+			<organization>U of Minnesota</organization>
+			<roles>
+				<role>developer</role>
+			</roles>
+		</developer>
+	</developers>
+	<contributors>
+		<contributor>
+			<name>none</name>
+		</contributor>
+	</contributors>
+
+	<mailingLists>
+		<mailingList>
+			<name>ImageSc Forum</name>
+			<archive>http://forum.image.sc/</archive>
+		</mailingList>
+	</mailingLists>
+
+	<scm>
+		<connection>scm:git:git://github.com/clij/clij</connection>
+        <developerConnection>scm:git:git@github.com/clij/clij</developerConnection>
+        <tag>HEAD</tag>
+		<url>https://github.com/clij/clij</url>
+	</scm>
+	<issueManagement>
+		<system>GitHub Issues</system>
+		<url>https://github.com/clij/clij/issues</url>
+	</issueManagement>
+	<ciManagement>
+		<system>None</system>
+	</ciManagement>
+
+	<properties>
+		<package-name>net.tpengo</package-name>
+		<license.licenseName>bsd_3</license.licenseName>
+		<license.copyrightOwners>Thomas Pengo</license.copyrightOwners>
+		<scijava.app.directory>D:/Fiji.app-20200323</scijava.app.directory>
+		<!--<imagej.app.directory>/home/rhaase/programs/fiji/Fiji.app/</imagej.app.directory>-->
+	</properties>
+
+	<dependencies>
+		<dependency>
+			<groupId>net.haesleinhuepf</groupId>
+			<artifactId>clij_</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>net.haesleinhuepf</groupId>
+			<artifactId>clij2_</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>de.csbdresden</groupId>
+			<artifactId>StarDist_</artifactId>
+			<version>0.3.0</version>
+		</dependency>
+		<dependency>
+			<groupId>de.csbdresden</groupId>
+			<artifactId>csbdeep</artifactId>
+			<version>0.3.4</version>
+		</dependency>
+</dependencies>
+
+	<repositories>
+		<repository>
+			<id>scijava.public</id>
+			<url>https://maven.scijava.org/content/groups/public</url>
+		</repository>
+		<repository>
+			<id>imagej.public</id>
+			<url>https://maven.imagej.net/content/groups/public</url>
+		</repository>
+	</repositories>
+
+</project>
